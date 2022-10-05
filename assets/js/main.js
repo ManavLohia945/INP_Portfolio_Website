@@ -1,3 +1,4 @@
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -32,7 +33,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click',linkAction));
 
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -58,8 +59,8 @@ skillsHeader.forEach((el) => {
 const tabs = document.querySelectorAll('[data-target]'),
      tabContents = document.querySelectorAll('[data-content]')
 
-console.log(tabs)
-console.log(tabContents)
+// console.log(tabs)
+// console.log(tabContents)
 
 tabs.forEach(tab => {
     tab.addEventListener('click',()=>{
@@ -134,7 +135,8 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     }
 });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/ 
+//as we keep scrolling through each section observe the header/list elem at the navbar they change the color 
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -146,16 +148,16 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
-function scrollHeader(){
+function scrollHeader(){  //when we are in light mode and when we scroll down a bit observe the navbar a line appears of width:100% 
     const nav = document.getElementById('header');
     //When the scroll is greater than 80 viewport height,add the scroll-header class
     if(this.scrollY >= 80) {
