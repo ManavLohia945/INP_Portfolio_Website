@@ -246,7 +246,7 @@ img {
 .nav__link:hover{
   color: var(--first-color);
 }
- 
+
 .nav__icon{
   font-size: 1.2rem;
 }
@@ -275,7 +275,7 @@ img {
 
 /* Change background header */
 .scroll-header{
-  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+  box-shadow: 0 -1px 4px rgba(0,0,0,.25);
 }
 
 /*==================== HOME ====================*/
