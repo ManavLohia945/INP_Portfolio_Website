@@ -14,7 +14,7 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Portfolio Website</title>
+        <title>Responsive Portfolio Website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -26,12 +26,13 @@
                     <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="themebutton"></i>
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
+                        <i class="uil uil-apps" id="bar"></i>
                     </div>
                  </div>
+                
                  <!--RECHECK ONCE--------------------------------------->
                 <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
+                    <ul class="nav__list grid" id="navbar">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i>Home
@@ -63,13 +64,10 @@
                             </a>
                         </li>
 
-                        
-
                     </ul>
                         <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-
-                 
+                </div> 
+                
             </nav>
         </header>
 
@@ -639,7 +637,6 @@
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                         <!-------PORTFOLIO 1------------->
-                        <!-------PORTFOLIO 1------------->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
 
@@ -891,7 +888,7 @@
                         </a>
                     </div>
                 </div>
-                <p class="footer__copy">MPROJ@2022,All right reserved</p>
+                <p class="footer__copy">ALEXA@2022,All right reserved</p>
             </div>
         </footer>
         
